@@ -1,4 +1,3 @@
-
 var gist = false;
 var match = window.location.pathname.match(/^\/([0-9]+)/);
 
@@ -11,4 +10,4 @@ if(match) {
 }
 
 if(gist)
-  document.querySelector('.pagehead-actions').innerHTML = document.querySelector('.pagehead-actions').innerHTML + '<li><a href="http://dabblet.com/gist/' + gist + '" class="minibutton" rel="nofollow">View Dabblet</a></li>'
+  document.querySelector('.pagehead-actions').innerHTML = '<li><a href="http://dabblet.com/gist/' + gist + '" class="minibutton" rel="nofollow">View Dabblet</a></li>' + document.querySelector('.pagehead-actions').innerHTML;
